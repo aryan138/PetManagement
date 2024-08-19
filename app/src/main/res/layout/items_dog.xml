@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/dogImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:id="@+id/dogNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/dogImageView"
+        android:text="Dog Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dogLifespanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogNameTextView"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/dogImageView"
+        android:text="Lifespan: 10-12 years"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dogBreedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogNameTextView"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@id/dogImageView"
+        android:text="Breed: Labrador Retriever"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dogTemperamentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dogBreedTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/dogImageView"
+        android:text="Temperament: Friendly, Outgoing, Gentle"
+        android:textSize="16sp" />
+
+    <!-- Add more TextViews for other details -->
+
+</RelativeLayout>
